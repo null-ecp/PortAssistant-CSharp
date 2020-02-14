@@ -1,0 +1,17 @@
+C:\Users\ad725\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\PortAssistant.csproj.GenerateResource.cache
+C:\Users\ad725\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Release\PortAssistant.exe.config
+C:\Users\ad725\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Release\PortAssistant.exe
+C:\Users\ad725\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Release\PortAssistant.pdb
+C:\Users\ad725\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\PortAssistant.Properties.Resources.resources
+C:\Users\ad725\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\PortAssistant.exe
+C:\Users\ad725\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\PortAssistant.pdb
+C:\Users\ad725\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Release\PortAssistant.Form1.resources
+C:\Users\ad725\source\repos\PortAssistant\WindowsFormsApp1\bin\Release\PortAssistant.exe.config
+C:\Users\ad725\source\repos\PortAssistant\WindowsFormsApp1\bin\Release\PortAssistant.exe
+C:\Users\ad725\source\repos\PortAssistant\WindowsFormsApp1\bin\Release\PortAssistant.pdb
+C:\Users\ad725\source\repos\PortAssistant\WindowsFormsApp1\obj\Release\PortAssistant.csprojAssemblyReference.cache
+C:\Users\ad725\source\repos\PortAssistant\WindowsFormsApp1\obj\Release\PortAssistant.Form1.resources
+C:\Users\ad725\source\repos\PortAssistant\WindowsFormsApp1\obj\Release\PortAssistant.Properties.Resources.resources
+C:\Users\ad725\source\repos\PortAssistant\WindowsFormsApp1\obj\Release\PortAssistant.csproj.GenerateResource.cache
+C:\Users\ad725\source\repos\PortAssistant\WindowsFormsApp1\obj\Release\PortAssistant.exe
+C:\Users\ad725\source\repos\PortAssistant\WindowsFormsApp1\obj\Release\PortAssistant.pdb
