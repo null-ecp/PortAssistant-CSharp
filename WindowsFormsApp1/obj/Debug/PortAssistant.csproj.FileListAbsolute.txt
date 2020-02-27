@@ -7,3 +7,4 @@ C:\Users\ad725\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF
 C:\Users\ad725\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\PortAssistant.csproj.GenerateResource.cache
 C:\Users\ad725\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\ad725\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\CE15513394\Desktop\PortAssistant-CSharp\WindowsFormsApp1\bin\Debug\PortAssistant.exe.config
