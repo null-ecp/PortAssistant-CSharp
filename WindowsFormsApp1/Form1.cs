@@ -8,9 +8,11 @@ using System.Windows.Forms;
 /**
  * 串口调试助手
  * @Auther:         Weison
- * @Version:        1.0.0.1
+ * @Version:        1.0.0.2
  * @Blog:             Https://null-ecp.github.io
- * @Updates:       更新开启串口后CPU占用率过高的问题。 -- By Weison 2020/2/13 18:22
+ * @Updates:       
+ *      - 更新开启串口后CPU占用率过高的问题.   -- By Weison 2020/2/13 18:22
+ *      - 更新串口开启逻辑.                                  -- By Weison 2020/3/3   10:00
  */
 namespace PortAssistant
 {
@@ -132,14 +134,15 @@ namespace PortAssistant
             try
             {
                 temp.Open();
-                MessageBox.Show("串口参数设置正常 , 可正常打开串口");
+                // MessageBox.Show("串口参数设置正常 , 可正常打开串口");
                 portHelp.IsCheck = true;
                 this.btn_Port_Open.BackColor = Color.Green;
                 this.btn_Port_Open.Text = "打开串口";
             }
             catch (Exception ex)
             {
-                MessageBox.Show("串口打开失败, 请检查参数是否设置错误");
+                // MessageBox.Show("串口打开失败, 请检查参数是否设置错误");
+                MessageBox.Show(ex.Message);
             }
             finally
             {
@@ -251,7 +254,7 @@ namespace PortAssistant
             try {
                 portHelp.initPort(portHelp.Port, getDatas());
                 portHelp.Port.Open();
-                MessageBox.Show("串口打开成功");
+                // MessageBox.Show("串口打开成功");
                 portHelp.IsOpen = true;
                 SwitchCmbBox();
                 this.btn_Port_Open.BackColor = Color.Red;
@@ -264,8 +267,8 @@ namespace PortAssistant
                 recv_thread.Start();
             }
             catch (Exception ex) { 
-                MessageBox.Show("串口打开失败");
-                MessageBox.Show(ex.Message, "ErrorMsg");
+                // MessageBox.Show("串口打开失败");
+                MessageBox.Show(ex.Message, "串口打开失败");
             }
         }
         
