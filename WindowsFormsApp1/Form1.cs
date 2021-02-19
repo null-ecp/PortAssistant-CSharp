@@ -4,19 +4,22 @@ using System.Drawing;
 using System.IO.Ports;
 using System.Threading;
 using System.Windows.Forms;
+using MetroFramework.Forms;
+using MetroFramework.Controls;
 
 /**
  * 串口调试助手
  * @Auther:         Weison
- * @Version:        1.0.0.2
+ * @Version:        1.0.0.3
  * @Blog:             Https://null-ecp.github.io
  * @Updates:       
- *      - 更新开启串口后CPU占用率过高的问题.   -- By Weison 2020/2/13 18:22
- *      - 更新串口开启逻辑.                                  -- By Weison 2020/3/3   10:00
+ *      - 更新开启串口后CPU占用率过高的问题.       -- By Weison 2020/2/13 18:22
+ *      - 更新串口开启逻辑.     -- By Weison 2020/3/3   10:00
+ *      - 更新UI为Metro风格(以及一些语法上的更新)      -- By Weison 2021/2/19 23:42
  */
 namespace PortAssistant
 {
-    public partial class Form1 : Form
+    public partial class Form1 :MetroForm
     {
         #region 参数设定
         // 委托声明
@@ -359,13 +362,13 @@ namespace PortAssistant
         */
         private Hashtable getDatas()
         {
-            Hashtable datas = new Hashtable();
-            datas.Add("PortName", this.cmb_Port_Nums.Text.ToString().Trim());
-            datas.Add("PortRate", this.cmb_Port_Level.Text.ToString().Trim());
-            datas.Add("PortData", this.cmb_Port_Data.Text.ToString().Trim());
-            datas.Add("PortStop", this.cmb_Port_Stop.Text.ToString().Trim());
-            datas.Add("PortCheck", this.cmb_Port_Check.Text.ToString().Trim());
-            return datas;
+            return new Hashtable() {
+                { "PortName",this.cmb_Port_Nums.Text.ToString().Trim()},
+                { "PortRate",this.cmb_Port_Level.Text.ToString().Trim()},
+                { "PortData",this.cmb_Port_Data.Text.ToString().Trim()},
+                { "PortStop",this.cmb_Port_Stop.Text.ToString().Trim()},
+                { "PortCheck",this.cmb_Port_Check.Text.ToString().Trim()}
+            };
         }
 
         /**
@@ -402,9 +405,7 @@ namespace PortAssistant
          */
         private void countWriteBytes(String data) {
             int count = 0;
-            try {
-                count = int.Parse(this.Dock_lbl_WBytes.Text.ToString().Trim());
-            } catch { } // 基本只有第一次发送会出现转换错误 ， 但是有赋予初始值0 ， 这里就不做异常处理
+            int.TryParse(this.Dock_lbl_WBytes.Text.ToString().Trim(),out count);
             count += charUtils.string2ByteArr(data).Length;
             this.Dock_lbl_WBytes.Text = count.ToString();
         }
@@ -415,10 +416,7 @@ namespace PortAssistant
         private void countReadBytes(String data)
         {
             int count = 0;
-            try {
-                count = int.Parse(this.Dock_lbl_RBytes.Text.ToString().Trim());
-            }
-            catch { } 
+            int.TryParse(this.Dock_lbl_RBytes.Text.ToString().Trim(), out count);
             count += charUtils.string2ByteArr(data).Length;
             this.Dock_lbl_RBytes.Text = count.ToString();
         }
@@ -481,9 +479,9 @@ namespace PortAssistant
             data = this.ckb_Recv_Hex.Checked ? charUtils.string2Hex(data) : data;
             // 获取时间戳
             string date = this.ckb_Recv_Time.Checked? DateTime.Now.ToString("HH:mm:ss"): null;
-            date = String.IsNullOrEmpty(date)? "": "[" + date + "]";
+            date = String.IsNullOrEmpty(date)? "": $"[{date}]";
             // 判断显示数据为发送还是接收
-            txt_Port_Recv.Text += date + (isSend? " →→ ": " ←← ") + data + "\r\n";
+            txt_Port_Recv.Text += $"{date}{(isSend ? " →→ " : " ←← ")}{data}\r\n";
             // 修改控件显示判断
             isSend = false;
         }

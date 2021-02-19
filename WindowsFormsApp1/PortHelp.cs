@@ -117,7 +117,7 @@ namespace PortAssistant
             byte[] buffer = new byte[temp.BytesToRead];
             if (temp == null)
             {
-                MessageBox.Show("事件触发错误 , 串口对象不存在或引用错误");
+                throw new Exception("事件触发错误 , 串口对象不存在或引用错误");
             }
             // 读取
             temp.Read(buffer, 0, buffer.Length);
