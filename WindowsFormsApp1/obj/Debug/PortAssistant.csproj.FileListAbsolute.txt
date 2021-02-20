@@ -21,3 +21,17 @@ C:\Users\CE15513394\Source\Repos\null-ecp\PortAssistant-CSharp\WindowsFormsApp1\
 C:\Users\CE15513394\Source\Repos\null-ecp\PortAssistant-CSharp\WindowsFormsApp1\obj\Debug\PortAssistant.exe
 C:\Users\CE15513394\Source\Repos\null-ecp\PortAssistant-CSharp\WindowsFormsApp1\obj\Debug\PortAssistant.pdb
 C:\Users\CE15513394\Source\Repos\null-ecp\PortAssistant-CSharp\WindowsFormsApp1\bin\Debug\MetroSet UI.dll
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\bin\Debug\PortAssistant.exe.config
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\bin\Debug\PortAssistant.exe
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\bin\Debug\PortAssistant.pdb
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\bin\Debug\MetroFramework.Design.dll
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\bin\Debug\MetroFramework.dll
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\obj\Debug\PortAssistant.csprojAssemblyReference.cache
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\obj\Debug\PortAssistant.Form1.resources
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\obj\Debug\PortAssistant.Properties.Resources.resources
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\obj\Debug\PortAssistant.csproj.GenerateResource.cache
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\obj\Debug\PortAssistant.csproj.CoreCompileInputs.cache
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\obj\Debug\PortAssistant.csproj.CopyComplete
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\obj\Debug\PortAssistant.exe
+C:\Users\ad725\source\repos\PortAssistant-CSharp\WindowsFormsApp1\obj\Debug\PortAssistant.pdb
